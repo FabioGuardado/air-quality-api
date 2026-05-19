@@ -6,8 +6,8 @@ namespace Sensores.Domain.Entities
 {
     public class LecturaAire : BaseEntity
     {
-        public string SensorId { get; set; }
-        public SensorCalidadAire Sensor { get; set; }
+        public int SensorId { get; set; }
+        public virtual SensorCalidadAire Sensor { get; set; } = null!;
         public string TipoGas { get; set; }
         public float? PM25 { get; set; }
         public float? PM10 { get; set; }

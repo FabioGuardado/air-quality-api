@@ -7,10 +7,10 @@ namespace Sensores.Domain.Entities
     public class SensorCalidadAire : BaseEntity
     {
         public string Ubicacion { get; set; }
-        public string Estado { get; set; }
-        public float Lat { get; set; }
-        public float Lon { get; set; }
-        public List<LecturaAire> Lecturas { get; set; }
-        public List<AlertaAire> Alertas { get; set; }
+        public string Estado { get; set; } = "Activo";
+        public decimal Lat { get; set; }
+        public decimal Lon { get; set; }
+        public virtual ICollection<LecturaAire> Lecturas { get; set; } = new List<LecturaAire>();
+        public virtual ICollection<AlertaAire> Alertas { get; set; } = new List<AlertaAire>();
     }
 }

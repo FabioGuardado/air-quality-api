@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Sensores.Application/Sensores.Application.csproj" />
+  <Project Path="Sensores.Domain/Sensores.Domain.csproj" />
+  <Project Path="Sensores.Infrastructure/Sensores.Infrastructure.csproj" />
+  <Project Path="Sensores/Sensores.API.csproj" />
+</Solution>
